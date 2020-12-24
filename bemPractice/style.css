@@ -1,0 +1,12 @@
+.header {
+    background-color: navy;
+    height: 15%;
+    min-height: 120px;
+    display: flex;
+}
+
+.logo {
+    color: white;
+    font-size: 3em;
+}
+

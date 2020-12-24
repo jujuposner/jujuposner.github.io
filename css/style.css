@@ -39,6 +39,11 @@ body {
 ****** PROJECT STYLES
 ******************************************* */
 h1 {
-  color: purple;
+  color: rgba(255, 255, 255, 0.3);
   text-align: center;
+  font-size: 25px;
+}
+
+body {
+  background-image: url(https://vignette2.wikia.nocookie.net/overlordmaruyama/images/c/c7/Throne_Hall.png/revision/latest?cb=20150714104942);
 }
