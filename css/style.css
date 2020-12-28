@@ -38,12 +38,39 @@ body {
 /* *******************************************
 ****** PROJECT STYLES
 ******************************************* */
+@media screen and (max-width: 999px) {
 h1 {
-  color: rgba(255, 255, 255, 0.3);
+  /* color: #7b838e; */
   text-align: center;
-  font-size: 25px;
 }
 
 body {
+  background-color: #10A5F5;
+  color: #7b838e;
+}
+
+.contact {
+  background-color: #ed431d;
+
+}
+
+.about {
+ background-color: #f7a350;
+}
+
+.projects {
+  background-color: #dca7b8;
+  } 
+}
+@media screen and (min-width: 1000px) { 
+body {
   background-image: url(https://vignette2.wikia.nocookie.net/overlordmaruyama/images/c/c7/Throne_Hall.png/revision/latest?cb=20150714104942);
+  background-position: 50% 0;
+  }
+
+  h1 {
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 25px;
+  }
 }
