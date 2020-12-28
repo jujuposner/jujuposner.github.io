@@ -49,18 +49,53 @@ body {
   color: #7b838e;
 }
 
-.contact {
-  background-color: #ed431d;
+body::-webkit-scrollbar {
+  width: 5px;
+}
 
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #7b838e;
+}
+
+.navbar {
+  display: flex;
+  
+
+  background: rgb(51, 50, 50);
+  border-radius: 15px;
+  color: rgb(158, 154, 154);
 }
 
 .about {
  background-color: #f7a350;
+ border: 1px solid;
+ padding: 15px;
+ border-radius: 30px;
+
 }
 
 .projects {
   background-color: #dca7b8;
+  border: 1px solid;
+  padding: 15px;
+  margin-top: 25%;
+  border-radius: 30px;
+
   } 
+
+  .contact {
+    background-color: #ed431d;
+    border: 1px solid;
+    padding: 15px;
+    margin-top: 25%;
+    margin-bottom: 50px;
+    border-radius: 30px;
+
+  }
 }
 @media screen and (min-width: 1000px) { 
 body {
@@ -69,8 +104,12 @@ body {
   }
 
   h1 {
-    color: rgba(255, 255, 255, 0.3);
+    /* color: rgba(255, 255, 255, 0.3); */
     text-align: center;
     font-size: 25px;
+  }
+
+  * {
+    color: white;
   }
 }
