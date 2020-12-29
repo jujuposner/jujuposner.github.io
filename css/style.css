@@ -38,15 +38,26 @@ body {
 /* *******************************************
 ****** PROJECT STYLES
 ******************************************* */
+.troll {
+  color: rgba(0, 0, 0, .3);
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 5px;
+}
+
+.troll:hover {
+  color: #10a5f5;
+}
+
 @media screen and (max-width: 999px) {
 h1 {
-  /* color: #7b838e; */
+  color: #7b838e;
   text-align: center;
 }
 
 body {
   background-color: #10A5F5;
-  color: #7b838e;
+  color: #000000;
 }
 
 body::-webkit-scrollbar {
@@ -61,13 +72,22 @@ body::-webkit-scrollbar-thumb {
   background: #7b838e;
 }
 
-.navbar {
-  display: flex;
-  
+li {
+  display: inline;
+}
 
+li:hover{
+  color: #dca7b8;
+  cursor: pointer;
+}
+
+ul {
   background: rgb(51, 50, 50);
   border-radius: 15px;
   color: rgb(158, 154, 154);
+  padding: 15px;
+  position: sticky;
+
 }
 
 .about {
