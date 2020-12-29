@@ -36,3 +36,13 @@
             <li>Projects</li>
             <li>Contact</li>
           </ul> */}
+
+//           <div class = about>
+//         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, a ea. In incidunt repellendus accusamus ullam odio nostrum magni aspernatur maxime iusto. Nemo corporis dolorem odit neque incidunt quia eveniet.</p>
+//       </div>
+//       <div class = projects>
+//         <p></p>
+//       </div>
+//       <div class = contact>
+//         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates tenetur, sed tempore similique iusto quaerat facilis atque alias laboriosam corrupti asperiores nam quae eveniet voluptatem quod, veniam deserunt necessitatibus.</p>
+// </div>

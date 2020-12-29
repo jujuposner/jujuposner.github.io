@@ -52,6 +52,8 @@ body {
 
 @media screen and (max-width: 999px) {
 
+  /* ------------HEADER STYLES------------- */
+
 header nav {
   display: flex;
   width: 90%;
@@ -74,10 +76,9 @@ header nav #menu {
 }
 
 header nav div a {
-  color: #7b838e;
+  color: #c0d1e9;
   font-size: larger;
   text-decoration: none;
-
 }
 
 header nav div a article {
@@ -87,10 +88,15 @@ header nav div a article {
 }
 
 header nav div a article:hover{
-  color: #dca7b8;
+  color: #DCA7B8;
   cursor: pointer;
 }
 
+/* -------------------MAIN STYLES------------------ */
+
+main h2 {
+  text-align: center;
+}
 
 /* h1 {
   color: #7b838e;
@@ -119,7 +125,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 li:hover{
-  color: #dca7b8;
+  color: #DCA7B8;
   cursor: pointer;
 }
 
@@ -141,7 +147,7 @@ ul {
 }
 
 .projects {
-  background-color: #dca7b8;
+  background-color: #DCA7B8;
   border: 1px solid;
   padding: 15px;
   margin-top: 25%;
@@ -170,7 +176,7 @@ body {
     /* color: rgba(255, 255, 255, 0.3); */
     text-align: center;
     font-size: 25px;
-    font-family: MedievalSharp;
+    font-family: 'MedievalSharp';
   }
 
   * {
