@@ -4,31 +4,69 @@
 
  $.ajax("https://spreadsheets.google.com/feeds/list/1aea6yjzeASKr-6tph4otjJNS53mtmwysXcFZIPclVX4/1/public/full?alt=json")
 .then((data) => {
-    //CHECKING MY DATA
-    console.log(data)
 
     // put our projects in a variable
     const rawProjects = data.feed.entry
-
-    //log our projects
-    console.log(rawProjects)
 
     //prettify our projects array
     const projects = rawProjects.map((project) => {
         return{
             name: project.gsx$name$t,
-            img: project.gsx$img.$t,
-            description: project.gsx$description.$t,
+            github: project.gsx$github.$t,
             live: project.gsx$live.$t,
-            github: project.gsx$github.$t
+            img: project.gsx$img.$t,
         }
     })
-    console.log(rawProjects)
 
-    //////////////////////////////////////////
-    //USE JQUERY TO RENDER PROJECTS TO PAGE
-    /////////////////////////////////////////
+    const final = projects.map((project) => {
+        return `
+        <my-card name=${project.name} git=${project.git} live=${project.live} img=${project.img}></my-card>`
+    })
+
+    const $section = $('section')
+
+    $section.html(final.join(""))
+
 })
+
+// ---------------SANDWICH--------------
+
+const $sandwich = $('#sandwich')
+const $menu = $('#menu')
+
+$sandwich.on('click', (event) => {
+
+    if ($menu.css('display') === 'flex'){
+        $menu.css('display', 'none')
+    } else {
+        $menu.css('display', 'flex')
+    }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 {/* <ul>

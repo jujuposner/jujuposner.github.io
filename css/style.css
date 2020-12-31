@@ -11,8 +11,8 @@
   --accent: red;
 
   /* FONTS */
-  --title: 'Yellowtail', cursive; serif;
-  --text: 'Staatliches', cursive; aerial;
+  /* --title: 'Yellowtail', cursive; serif;
+  --text: 'Staatliches', cursive; aerial; */
 }
 
 /* GLOBAL STYLES */
@@ -50,59 +50,6 @@ body {
   color: #10a5f5;
 }
 
-@media screen and (max-width: 999px) {
-
-  /* ------------HEADER STYLES------------- */
-
-header nav {
-  display: flex;
-  width: 90%;
-  background-color: #10a5F5;
-  margin: 20px auto;
-  padding: 10px;
-  justify-content: space-between;
-}  
-
-header nav h1 {
-  color: #fafbfd;
-  font-size: 30px;
-  font-weight: 100;
-}
-
-header nav #menu {
-  color: #7b838e;
-  display: flex;
-  padding: 5px;
-}
-
-header nav div a {
-  color: #c0d1e9;
-  font-size: larger;
-  text-decoration: none;
-}
-
-header nav div a article {
-  margin: 5px;
-  text-transform: uppercase;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-header nav div a article:hover{
-  color: #DCA7B8;
-  cursor: pointer;
-}
-
-/* -------------------MAIN STYLES------------------ */
-
-main h2 {
-  text-align: center;
-}
-
-/* h1 {
-  color: #7b838e;
-  text-align: center;
-} */
-
 body {
   background-color: #10A5F5;
   color: #000000;
@@ -120,7 +67,79 @@ body::-webkit-scrollbar-thumb {
   background: #7b838e;
 }
 
-/* li {
+header nav #menu {
+  display: none;
+}
+
+header nav #sandwich {
+  display: block;
+}
+
+header nav #menu {
+  color:#7b838e;
+  padding: 5px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 425px) {
+
+    /* ------------HEADER STYLES------------- */
+
+  header nav {
+    display: flex;
+    width: 90%;
+    background-color: #10a5F5;
+    margin: 20px auto;
+    padding: 10px;
+    justify-content: space-between;
+  }  
+
+  header nav h1 {
+    color: #fafbfd;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Yellowtail', cursive;
+  }
+
+  header nav #menu {
+    color: #7b838e;
+    display: flex;
+    padding: 5px;
+  }
+
+  header nav #sandwich {
+    display: none;
+  }
+
+  header nav div a {
+    color: #c0d1e9;
+    font-size: larger;
+    text-decoration: none;
+  }
+
+  header nav div a article {
+    margin: 5px;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  header nav div a article:hover{
+    color: #DCA7B8;
+    cursor: pointer;
+  }
+
+/* -------------------MAIN STYLES------------------ */
+
+  main h2 {
+    text-align: center;
+  }
+
+/* h1 {
+  color: #7b838e;
+  text-align: center;
+} 
+
+ li {
   display: inline;
 }
 
@@ -136,23 +155,22 @@ ul {
   padding: 15px;
   position: sticky;
 
-} */
+} 
 
-.about {
- background-color: #f7a350;
- border: 1px solid;
- padding: 15px;
- border-radius: 30px;
-
-}
-
-.projects {
-  background-color: #DCA7B8;
+ .about {
+  background-color: #f7a350;
   border: 1px solid;
   padding: 15px;
-  margin-top: 25%;
   border-radius: 30px;
 
+  }
+
+  .projects {
+    background-color: #DCA7B8;
+    border: 1px solid;
+    padding: 15px;
+    margin-top: 25%;
+    border-radius: 30px;
   } 
 
   .contact {
@@ -161,10 +179,33 @@ ul {
     padding: 15px;
     margin-top: 25%;
     margin-bottom: 50px;
-    border-radius: 30px;
+    border-radius: 30px; 
+  } */
 
+  .img {
+  max-width: 300px;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  ::part(body) {
+    display: flex;
+    justify-content: center;
+  }
+
+  sl-button::part(base) {
+    margin: 20px;
   }
 }
+
+
+
 @media screen and (min-width: 1000px) { 
 
 body {
