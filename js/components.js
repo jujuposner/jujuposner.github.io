@@ -18,6 +18,7 @@ class MyCard extends HTMLElement {
             background-color: #f7a350;
         }
 
+        @media screen and (min-width: 426px) {
         sl-card::part(base) {
             max-width: 300px;
             height: 400px;
@@ -28,6 +29,7 @@ class MyCard extends HTMLElement {
             height: 300px;
             object-fit: cover;
         }
+    }
         </style>`
 
         this.shadowRoot.innerHTML = `${this.styleCode}
