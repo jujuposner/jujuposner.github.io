@@ -17,6 +17,17 @@ class MyCard extends HTMLElement {
         sl-card::part(header) {
             background-color: #f7a350;
         }
+
+        sl-card::part(base) {
+            max-width: 300px;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
         </style>`
 
         this.shadowRoot.innerHTML = `${this.styleCode}

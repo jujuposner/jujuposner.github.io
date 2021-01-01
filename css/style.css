@@ -106,7 +106,7 @@ h2 {
 }
  
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 426px) {
 
     /* ------------HEADER STYLES------------- */
 
@@ -156,58 +156,6 @@ h2 {
 
 /* -------------------MAIN STYLES------------------ */
 
-  main h2 {
-    text-align: center;
-  }
-
-/* h1 {
-  color: #7b838e;
-  text-align: center;
-} 
-
- li {
-  display: inline;
-}
-
-li:hover{
-  color: #DCA7B8;
-  cursor: pointer;
-}
-
-ul {
-  background: rgb(51, 50, 50);
-  border-radius: 15px;
-  color: rgb(158, 154, 154);
-  padding: 15px;
-  position: sticky;
-
-} 
-
- .about {
-  background-color: #f7a350;
-  border: 1px solid;
-  padding: 15px;
-  border-radius: 30px;
-
-  }
-
-  .projects {
-    background-color: #DCA7B8;
-    border: 1px solid;
-    padding: 15px;
-    margin-top: 25%;
-    border-radius: 30px;
-  } 
-
-  .contact {
-    background-color: #ed431d;
-    border: 1px solid;
-    padding: 15px;
-    margin-top: 25%;
-    margin-bottom: 50px;
-    border-radius: 30px; 
-  } */
-
   .img {
   max-width: 300px;
   }
@@ -216,23 +164,14 @@ ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 90%;
+    width: 12;
     margin: 10px auto;
-  }
-
-  ::part(body) {
-    display: flex;
-    justify-content: center;
-  }
-
-  sl-button::part(base) {
-    margin: 20px;
   }
 }
 
 
 
-@media screen and (min-width: 1000px) { 
+/* @media screen and (min-width: 1300px) { 
 
 body {
   background-image: url(https://vignette2.wikia.nocookie.net/overlordmaruyama/images/c/c7/Throne_Hall.png/revision/latest?cb=20150714104942);
@@ -240,7 +179,7 @@ body {
   }
 
   h1 {
-    /* color: rgba(255, 255, 255, 0.3); */
+     color: rgba(255, 255, 255, 0.3); 
     text-align: center;
     font-size: 25px;
     font-family: 'MedievalSharp';
@@ -249,4 +188,4 @@ body {
   * {
     color: white;
   }
-}
+} */
