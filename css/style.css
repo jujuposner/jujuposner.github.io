@@ -11,8 +11,8 @@
   --accent: red;
 
   /* FONTS */
-  /* --title: 'Yellowtail', cursive; serif;
-  --text: 'Staatliches', cursive; aerial; */
+  --title: 'Yellowtail', cursive; serif;
+  --text: 'Staatliches', cursive; aerial;
 }
 
 /* GLOBAL STYLES */
@@ -70,6 +70,8 @@ body::-webkit-scrollbar-thumb {
 header nav {
   display: flex;
   justify-content: space-between;
+  background-color: #7b838e;
+  border-radius: 5px;
 }
 
 header nav #sandwich {
@@ -85,8 +87,22 @@ header nav #menu {
   justify-content: space-around;
 }
 
+header nav div a {
+  text-decoration: none;
+  color: black;
+}
+
 span {
   color: #DCA7B8;
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: #ed431d;
+  border-radius: 25px;
 }
  
 

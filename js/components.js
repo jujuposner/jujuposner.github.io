@@ -11,11 +11,11 @@ class MyCard extends HTMLElement {
         this.styleCode = `
         <style>
         sl-card::part(body) {
-            background-color: orange;
+            background-color: #f7a350;
         }
          
         sl-card::part(header) {
-            background-color: orange;
+            background-color: #f7a350;
         }
         </style>`
 
